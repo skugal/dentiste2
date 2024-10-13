@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dr. Chahid Rabii - Médecin Dentiste</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- EmailJS (Make sure the key is secure in production) -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("QjAwuEhuELN16tvaz"); // Keep this secure in a backend
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/1234.png" alt="Centre Dentaire CHAHID">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Dr. Chahid Rabii</h1>
+            <p>Médecin Dentiste</p>
+            <a href="#services" class="btn">Découvrez nos services</a>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="about" class="about">
+        <h2>À Propos de Dr. Chahid Rabii</h2>
+        <img src="1234.png" alt="Dr. Chahid Rabii" class="about-image">
+        <p>
+            Dr. Chahid Rabii est un médecin dentiste spécialisé en orthodontie, implantologie, chirurgie dentaire, soins
+            bucco-dentaires, et bien plus encore. Avec des années d'expérience, il s'engage à fournir des soins
+            dentaires de haute qualité dans un environnement confortable et accueillant.
+        </p>
+        <p>
+            Passionné par son métier, Dr. Rabii utilise des techniques modernes et des technologies de pointe pour
+            garantir le meilleur traitement possible à ses patients. Sa philosophie de soins repose sur la prévention,
+            l'éducation et le respect des besoins individuels de chaque patient.
+        </p>
+        <p>
+            En plus de sa pratique, Dr. Rabii participe régulièrement à des conférences et à des formations continues
+            pour rester à jour sur les dernières avancées en dentisterie. Son objectif est d'aider chaque patient à
+            atteindre et à maintenir une santé bucco-dentaire optimale.
+        </p>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-grid">
+            <!-- Orthodontie -->
+            <div class="service-item" data-aos="fade-up">
+                <img src="orthodontie01.png" alt="Orthodontie">
+                <h3>Orthodontie</h3>
+                <p>Correction des malpositions dentaires avec des appareils orthodontiques adaptés.</p>
+            </div>
+            <!-- Implantologie -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="implantologie-dentaire.png" alt="Implantologie">
+                <h3>Implantologie</h3>
+                <p>Pose d'implants dentaires pour remplacer les dents manquantes et restaurer un sourire parfait.</p>
+            </div>
+            <!-- Chirurgie dentaire -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="chirurgie-dentaire.jpg" alt="Chirurgie dentaire">
+                <h3>Chirurgie dentaire</h3>
+                <p>Interventions chirurgicales buccales pour extractions complexes ou greffes osseuses.</p>
+            </div>
+            <!-- Soin -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="soins.jpg" alt="Soin">
+                <h3>Soin</h3>
+                <p>Traitements de caries, nettoyages et soins dentaires pour maintenir une bonne santé bucco-dentaire.
+                </p>
+            </div>
+            <!-- Prothèse fixée -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="prothese-fixe.jpg" alt="Prothèse fixée">
+                <h3>Prothèse fixée</h3>
+                <p>Pose de couronnes et de bridges pour restaurer la fonction et l'esthétique des dents.</p>
+            </div>
+            <!-- Pédodontie -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="1000">
+                <img src="Pedodontie.jpg" alt="Pédodontie">
+                <h3>Pédodontie</h3>
+                <p>Soins dentaires pour les enfants, y compris les traitements préventifs et les restaurations.</p>
+            </div>
+            <!-- Blanchiment dentaire -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="1200">
+                <img src="blanchiment.jpg" alt="Blanchiment dentaire">
+                <h3>Blanchiment dentaire</h3>
+                <p>Blanchiment des dents pour un sourire plus éclatant et plus blanc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-info">
+            <div class="contact-item" data-aos="fade-right">
+                <i class="fas fa-phone-alt"></i>
+                <p>Téléphone fixe : 05 22 57 85 65</p>
+                <p>Mobile : 06 21 96 47 06</p>
+            </div>
+            <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Bd Dakhla Jamila 03 N 185 Cité RI Jamaâ 1er étage, Casablanca</p>
+            </div>
+            <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
+                <i class="fas fa-envelope"></i>
+                <p>Email : <a href="mailto:centredentairechahid@gmail.com">centredentairechahid@gmail.com</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="map-link">
+            <a href="https://maps.app.goo.gl/DQoGAqNqZ1FSP14W7" target="_blank" class="btn">
+                Localisation dans Google Map
+            </a>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dr. Chahid Rabii | Tous droits réservés</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="SCRIPT.js"></script>
+    <!-- AOS JS for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
